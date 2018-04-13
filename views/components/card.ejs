@@ -1,0 +1,253 @@
+
+
+<%
+/*eslint-disable */
+	var content = data
+	var firstCard = firstCard;
+/*eslint-enable */
+
+%>
+ <% for (let key in firstCard) { console.log(firstCard[key][0][0]) %>
+	<section class="card-holder">
+		<article id="firstCard" class="card">
+	
+			<div class="flipper">
+				<div>
+					<section class="card-leftHalf" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('<%- firstCard[key][0].imageSrc %>'); background-position: center top"> 
+						<h2> <%- firstCard[key][0].title %></h2>
+					</section>
+					<section class="card-rightHalf">
+						<footer>
+							<h2><%- firstCard[key][0].MoreOver %></h2>
+							<p><%- firstCard[key][0].MoreOverText %></p>
+						</footer>
+						<section class="card-cta">
+							<ul>
+								<a href="<%- firstCard[key][0].Link1Href %>"><%- firstCard[key][0].Link1 %></a>
+								<a href="<%- firstCard[key][0].Link2Href %>"><%- firstCard[key][0].Link2 %></a>
+							</ul>
+							<button class="card-button"><%- firstCard[key][0].Button %></button>
+						</section>
+					</section>
+				</div>
+	
+				<article class="card-backface">
+					<h1>lalala</h1>
+					<p>Here is a lot of interesting stuff about this project. You can see things like images, text information animations and
+						there should be a button to view the project live.</p>
+					<hr>
+					<img src="https://placebear.com/400/300" alt="">
+					<img src="https://placebear.com/400/300" alt="">
+					<hr>
+					<figure class="image-overlay-corners">
+						<img src="https://placebear.com/400/300" alt="">
+						<img src="https://placebear.com/400/300" alt="">
+					</figure>
+					<p>Some more text here about the project and such</p>
+					<hr>
+					<figure class="image-with-caption">
+						<img src="https://placebear.com/400/300" alt="">
+						<figcaption>Here is a bunch of text about this image</figcaption>
+					</figure>
+					<a href="#">
+						<button>View project</button>
+					</a>
+				</article>
+	
+			</div>
+	
+		</article>
+	</section>
+<% } %>
+
+<% for (let key in content) { console.log(content[key]) %>
+	<section class="card-holder">
+		<article class="card">
+	
+			<div class="flipper">
+				<div>
+					<section class="card-leftHalf" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('<%- content[key][0].imageSrc %>'); background-position: center top; background-size: cover;"> 
+						<h2> <%- content[key][0].title %></h2>
+					</section>
+					<section class="card-rightHalf">
+						<footer>
+							<h2><%- content[key][0].MoreOver %></h2>
+							<p><%- content[key][0].MoreOverText %></p>
+							<ul>
+								<%- content[key][0].MoreOverListHeader %>
+								<li><%- content[key][0].MoreOverListItem1 %></li>
+								<li><%- content[key][0].MoreOverListItem2 %></li>
+								<li><%- content[key][0].MoreOverListItem3 %></li>
+							</ul>
+						</footer>
+						<section class="card-cta">
+							<ul>
+								<a href="<%- content[key][0].Link1Href %>"><%- content[key][0].Link1 %></a>
+								<a href="<%- content[key][0].Link2Href %>"><%- content[key][0].Link2 %></a>
+							</ul>
+							<button class="card-button"><%- content[key][0].Button %></button>
+						</section>
+					</section>
+				</div>
+	
+				<article class="card-backface">
+					<h1>lalala</h1>
+					<p>Here is a lot of interesting stuff about this project. You can see things like images, text information animations and
+						there should be a button to view the project live.</p>
+					<hr>
+					<img src="https://placebear.com/400/300" alt="">
+					<img src="https://placebear.com/400/300" alt="">
+					<hr>
+					<figure class="image-overlay-corners">
+						<img src="https://placebear.com/400/300" alt="">
+						<img src="https://placebear.com/400/300" alt="">
+					</figure>
+					<p>Some more text here about the project and such</p>
+					<hr>
+					<figure class="image-with-caption">
+						<img src="https://placebear.com/400/300" alt="">
+						<figcaption>Here is a bunch of text about this image</figcaption>
+					</figure>
+					<a href="#">
+						<button>View project</button>
+					</a>
+				</article>
+	
+			</div>
+	
+		</article>
+	</section>
+<% } %>
+
+
+
+<!-- <section class="card-holder">
+	<article class="card">
+		<section class="card-leftHalf">
+			<h2>lalala</h2>
+		</section>
+		<section class="card-rightHalf">
+			<footer>
+				<h2>Info</h2>
+				<ul>
+					Technologies used:
+					<li>JavaScript</li>
+					<li>GSAP</li>
+				</ul>
+			</footer>
+			<section class="card-cta">
+				<ul>
+					<a href="">Github</a>
+					<a href="">Website</a>
+				</ul>
+				<a href="#">
+					<button>View Case</button>
+				</a>
+			</section>
+		</section>
+	</article>
+</section>
+<section class="card-holder">
+	<article class="card">
+		<section class="card-leftHalf">
+			<h2>lalala</h2>
+		</section>
+		<section class="card-rightHalf">
+			<footer>
+				<h2>Info</h2>
+				<ul>
+					Technologies used:
+					<li>JavaScript</li>
+					<li>GSAP</li>
+				</ul>
+			</footer>
+			<section class="card-cta">
+				<ul>
+					<a href="">Github</a>
+					<a href="">Website</a>
+				</ul>
+				<a href="#">
+					<button>View Case</button>
+				</a>
+			</section>
+		</section>
+	</article>
+</section>
+<section class="card-holder">
+	<article class="card">
+		<section class="card-leftHalf">
+			<h2>lalala</h2>
+		</section>
+		<section class="card-rightHalf">
+			<footer>
+				<h2>Info</h2>
+				<ul>
+					Technologies used:
+					<li>JavaScript</li>
+					<li>GSAP</li>
+				</ul>
+			</footer>
+			<section class="card-cta">
+				<ul>
+					<a href="">Github</a>
+					<a href="">Website</a>
+				</ul>
+				<a href="#">
+					<button>View Case</button>
+				</a>
+			</section>
+		</section>
+	</article>
+</section>
+<section class="card-holder">
+	<article class="card">
+		<section class="card-leftHalf">
+			<h2>lalala</h2>
+		</section>
+		<section class="card-rightHalf">
+			<footer>
+				<h2>Info</h2>
+				<ul>
+					Technologies used:
+					<li>JavaScript</li>
+					<li>GSAP</li>
+				</ul>
+			</footer>
+			<section class="card-cta">
+				<ul>
+					<a href="">Github</a>
+					<a href="">Website</a>
+				</ul>
+				<a href="#">
+					<button>View Case</button>
+				</a>
+			</section>
+		</section>
+	</article>
+</section>
+<section class="card-holder">
+	<article class="card">
+		<section class="card-leftHalf">
+			<h2>lalala</h2>
+		</section>
+		<section class="card-rightHalf">
+			<footer>
+				<h2>Info</h2>
+				<ul>
+					Technologies used:
+					<li>JavaScript</li>
+					<li>GSAP</li>
+				</ul>
+			</footer>
+			<section class="card-cta">
+				<ul>
+					<a href="">Github</a>
+					<a href="">Website</a>
+				</ul>
+				<a href="#">
+					<button>View Case</button>
+				</a>
+			</section>
+		</section>
+	</article>
+</section> -->

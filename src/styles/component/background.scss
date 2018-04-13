@@ -1,0 +1,17 @@
+.background {
+	width: 100vw;
+	height: 100vh;
+	background-color: #000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	rect {
+		fill: white;
+		opacity: .05;
+		// transform: rotate(45deg);
+		// transform-origin: center;
+		// transition-timing-function: linear;
+		will-change: transform;
+	}
+}
